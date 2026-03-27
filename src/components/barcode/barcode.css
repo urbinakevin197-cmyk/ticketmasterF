@@ -1,0 +1,78 @@
+.barcodeContainer{
+  position: relative;
+  width: 216px;
+  height: 48px;
+}
+
+/* barra azul ancha */
+.scannerWide{
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:8px;
+
+  background:#1e88ff;
+  opacity:0.35;
+
+  animation:scanMove 2s linear infinite;
+}
+
+.scannerThin{
+  position:absolute;
+
+  top:-6px;
+  bottom:-6px;
+
+  width:3px;
+  background:#1e88ff;
+
+  animation:scanMove 2s linear infinite,
+             lead 2s ease-in-out infinite;
+}
+
+/* movimiento */
+@keyframes scanMove{
+
+  0%{
+    left:0;
+  }
+
+  50%{
+    left:calc(100% - 8px);
+  }
+
+  100%{
+    left:0;
+  }
+
+}
+
+/* separación */
+@keyframes lead{
+
+  /* inicio juntos */
+  0%{
+    transform:translateX(6px);
+  }
+
+  /* ida → se separan más en el centro */
+  25%{
+    transform:translateX(24px);
+  }
+
+  /* llegan juntos a la derecha */
+  50%{
+    transform:translateX(6px);
+  }
+
+  /* regreso → se separan hacia la izquierda */
+  75%{
+    transform:translateX(-12px);
+  }
+
+  /* llegan juntos a la izquierda */
+  100%{
+    transform:translateX(6px);
+  }
+
+}
