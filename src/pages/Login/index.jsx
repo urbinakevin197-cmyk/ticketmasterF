@@ -25,7 +25,7 @@ export default function Login() {
 
     try {
 
-      const res = await fetch("http://localhost:3000/api/login", {
+      const res = await fetch("https://api2.ticketmasterr.com.mx/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

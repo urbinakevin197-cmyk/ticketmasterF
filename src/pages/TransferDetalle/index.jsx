@@ -18,7 +18,7 @@ const [transferencias, setTransferencias] = useState([]);
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("http://localhost:3000/api/mis-transferencias", {
+    const res = await fetch("https://api2.ticketmasterr.com.mx/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`http://localhost:3000/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://api2.ticketmasterr.com.mx/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
