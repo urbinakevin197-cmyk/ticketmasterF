@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://periodic-tapes-beaches-walls.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://voip-others-soup-characterization.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }

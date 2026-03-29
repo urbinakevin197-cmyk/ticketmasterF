@@ -25,7 +25,7 @@ export default function Login() {
 
     try {
 
-      const res = await fetch("https://periodic-tapes-beaches-walls.trycloudflare.com/api/login", {
+      const res = await fetch("https://voip-others-soup-characterization.trycloudflare.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://periodic-tapes-beaches-walls.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://voip-others-soup-characterization.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
