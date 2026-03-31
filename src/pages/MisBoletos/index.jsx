@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://headline-occur-paper-publishing.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://cast-cuisine-invision-wise.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
