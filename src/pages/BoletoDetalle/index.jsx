@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://postal-visitors-appeared-nurses.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://headline-occur-paper-publishing.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
