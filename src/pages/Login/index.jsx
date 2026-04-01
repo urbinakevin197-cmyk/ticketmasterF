@@ -25,7 +25,7 @@ export default function Login() {
 
     try {
 
-      const res = await fetch("https://cast-cuisine-invision-wise.trycloudflare.com/api/login", {
+      const res = await fetch("https://products-exploration-rolls-robinson.trycloudflare.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
