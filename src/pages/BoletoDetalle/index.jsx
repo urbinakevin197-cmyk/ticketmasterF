@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://products-exploration-rolls-robinson.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://routines-ambient-fresh-gadgets.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
