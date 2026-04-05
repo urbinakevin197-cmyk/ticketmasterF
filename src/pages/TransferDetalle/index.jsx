@@ -10,11 +10,22 @@ export default function TransferDetalle() {
     const { setGlobalLoading } = useContext(LoaderContext);
    const navigate = useNavigate();
    const [loading, setLoading] = useState(false);
-   const [boleto, setBoleto] = useState(null);
+    const [boleto, setBoleto] = useState(null);
    const { id } = useParams();
   const [transfer, setTransfer] = useState(null);
 
 const [transferencias, setTransferencias] = useState([]);
+
+    useEffect(() => {
+  fetch(`https://cad-contest-buried-wants.trycloudflare.com/api/boletos/${id}`, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`
+    }
+  })
+    .then(res => res.json())
+    .then(data => setBoleto(data))
+    .catch(err => console.log(err));
+}, [id]);
 
 useEffect(() => {
   const obtener = async () => {
@@ -1026,7 +1037,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                                     </svg>
                                     <div>
                                       <p className="sc-f3b7ba62-0 gfIJvo">
-                                        Sección ESQ100, Fila 34, Asiento 19
+                                        Sección {boleto.seccion}, Fila {boleto.fila}, Asiento {boleto.asiento}
                                       </p>
                                     </div>
                                   </div>
