@@ -14,6 +14,7 @@ export default function TransferDetalle() {
     const [boleto, setBoleto] = useState(null);
    const { id } = useParams();
   const [transfer, setTransfer] = useState(null);
+  const [loadingTransfer, setLoadingTransfer] = useState(true);
 
 const [transferencias, setTransferencias] = useState([]);
 
@@ -38,10 +39,13 @@ useEffect(() => {
 
     const data = await res.json();
     setTransferencias(data);
+    setLoadingTransfer(false);
   };
 
   obtener();
 }, []);
+
+if (loadingTransfer) return null;
 
 const t = transferencias[0];
   
