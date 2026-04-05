@@ -1,5 +1,6 @@
 import "./styles.css"
 import { useNavigate, useParams } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { LoaderContext } from "../../App";
@@ -44,7 +45,7 @@ useEffect(() => {
 
 const t = transferencias[0];
   
-if (!t) return;
+if (!t) return <Navigate to="/mis-boletos" />;
 
 const aceptarBoleto = async () => {
   setLoading(true);
