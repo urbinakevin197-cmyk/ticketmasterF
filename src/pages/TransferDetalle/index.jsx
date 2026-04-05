@@ -1037,7 +1037,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                                     </svg>
                                     <div>
                                       <p className="sc-f3b7ba62-0 gfIJvo">
-                                        Sección {boleto.seccion}, Fila {boleto.fila}, Asiento {boleto.asiento}
+                                        Sección ESQ100, Fila 34, Asiento 19
                                       </p>
                                     </div>
                                   </div>
