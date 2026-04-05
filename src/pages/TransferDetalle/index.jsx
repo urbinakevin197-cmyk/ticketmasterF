@@ -16,17 +16,6 @@ export default function TransferDetalle() {
 
 const [transferencias, setTransferencias] = useState([]);
 
-    useEffect(() => {
-  fetch(`https://cad-contest-buried-wants.trycloudflare.com/api/boletos/${id}`, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("token")}`
-    }
-  })
-    .then(res => res.json())
-    .then(data => setBoleto(data))
-    .catch(err => console.log(err));
-}, [id]);
-
 useEffect(() => {
   const obtener = async () => {
     const res = await fetch("https://cad-contest-buried-wants.trycloudflare.com/api/mis-transferencias", {
