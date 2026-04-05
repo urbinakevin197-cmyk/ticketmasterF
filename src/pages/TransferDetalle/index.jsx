@@ -1,6 +1,5 @@
 import "./styles.css"
 import { useNavigate, useParams } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { LoaderContext } from "../../App";
@@ -14,7 +13,6 @@ export default function TransferDetalle() {
     const [boleto, setBoleto] = useState(null);
    const { id } = useParams();
   const [transfer, setTransfer] = useState(null);
-  const [loadingTransfer, setLoadingTransfer] = useState(true);
 
 const [transferencias, setTransferencias] = useState([]);
 
@@ -39,17 +37,14 @@ useEffect(() => {
 
     const data = await res.json();
     setTransferencias(data);
-    setLoadingTransfer(false);
   };
 
   obtener();
 }, []);
 
-if (loadingTransfer) return null;
-
 const t = transferencias[0];
   
-if (!t) return <Navigate to="/mis-boletos" />;
+if (!t) return;
 
 const aceptarBoleto = async () => {
   setLoading(true);
