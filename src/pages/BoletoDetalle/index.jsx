@@ -724,7 +724,7 @@ export default function BoletoDetalle() {
                                   aria-hidden="true"
                                   className="sc-75dcd6e3-0 hONbtM">
                                   <span className="sc-75dcd6e3-1 idKQDV">
-                                    {new Date(boleto.fecha_evento).toLocaleString("es-MX", {weekday: "short"})}
+                                    {new Date(boleto.fecha_evento).toLocaleString("es-MX", {month: "short"})}
                                   </span>
                                   <span className="sc-75dcd6e3-2 spLUP">
                                      {new Date(boleto.fecha_evento).toLocaleString("es-MX", {
