@@ -1512,7 +1512,7 @@ export default function BoletoDetalle() {
                                   <span
                                     className="sc-3d81ec9c-7 jTjXvQ"
                                     translate="no">
-                                    NARANJA 4
+                                    ACCESO 4
                                   </span>
                                 </div>
                               </div>
