@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://cad-contest-buried-wants.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://biographies-citizen-safely-polls.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -634,7 +634,7 @@ useEffect(() => {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Melina Islas
+                    Nery de Lucio
                   </span>
                 </p>
               </div>

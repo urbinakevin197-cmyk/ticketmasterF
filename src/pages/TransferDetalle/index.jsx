@@ -14,11 +14,11 @@ export default function TransferDetalle() {
    const { id } = useParams();
   const [transfer, setTransfer] = useState(null);
 
-const [transferencias, setTransferencias] = useState([]);
+   const [transferencias, setTransferencias] = useState([]);
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://cad-contest-buried-wants.trycloudflare.com/api/mis-transferencias", {
+    const res = await fetch("https://biographies-citizen-safely-polls.trycloudflare.com/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://cad-contest-buried-wants.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://biographies-citizen-safely-polls.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
