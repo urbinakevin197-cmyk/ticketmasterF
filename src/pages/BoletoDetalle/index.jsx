@@ -715,7 +715,7 @@ export default function BoletoDetalle() {
                             <div
                               aria-hidden="true"
                               className="sc-afdb3e79-0 dJmYZU">
-                              <span className="sc-afdb3e79-1 bYEIOg">{new Date(boleto.fecha_evento).toLocaleString("es-MX", {weekday: "short"})}</span>
+                              <span className="sc-afdb3e79-1 bYEIOg">{new Date(boleto.fecha_evento).toLocaleString("es-MX", {month: "short"})}</span>
                               <span className="sc-afdb3e79-2 bOnyCz">{new Date(boleto.fecha_evento).getDate()}</span>
                               <span className="sc-afdb3e79-3 hbHXrE" />
                             </div>
@@ -730,7 +730,7 @@ export default function BoletoDetalle() {
                                   aria-hidden="true"
                                   className="sc-75dcd6e3-0 hONbtM">
                                   <span className="sc-75dcd6e3-1 idKQDV">
-                                    {new Date(boleto.fecha_evento).toLocaleString("es-MX", {month: "short"})}
+                                    {new Date(boleto.fecha_evento).toLocaleString("es-MX", {weekday: "short"})}
                                   </span>
                                   <span className="sc-75dcd6e3-2 spLUP">
                                      {new Date(boleto.fecha_evento).toLocaleString("es-MX", {
