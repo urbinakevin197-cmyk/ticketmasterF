@@ -37,6 +37,12 @@ export default function BoletoDetalle() {
 
   return (
     <>
+    <title>Ticketmaster - Mi Cuenta</title>
+      <link
+      href="//uk.tmconst.com/rc-51677358/images/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
       <img
       height="1px"
       src="https://www.facebook.com/tr/?id=3037493749806106&ev=PageView&noscript=1"

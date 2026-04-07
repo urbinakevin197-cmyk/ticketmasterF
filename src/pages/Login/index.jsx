@@ -84,6 +84,11 @@ export default function Login() {
     />
     <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
     <title>Ticketmaster Sign In</title>
+      <link
+      href="//uk.tmconst.com/rc-51677358/images/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
     <style
       dangerouslySetInnerHTML={{
         __html:

@@ -54,6 +54,12 @@ useEffect(() => {
   }, []);
   return (
     <>
+    <title>Ticketmaster - Mis Boletos</title>
+      <link
+      href="//uk.tmconst.com/rc-51677358/images/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
      <img
       height="1px"
       src="./Ticketmaster - Mi Cuenta _ Martes Populares de Lucha Libre CMLL_files/saved_resource"
