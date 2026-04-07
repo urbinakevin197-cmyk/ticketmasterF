@@ -27,26 +27,6 @@ export default function MisBoletos() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   const navigate = useNavigate();
   //boleto dinamico
-     const [transferencias, setTransferencias] = useState([]);
-
-useEffect(() => {
-  const obtener = async () => {
-    const res = await fetch("https://biographies-citizen-safely-polls.trycloudflare.com/api/mis-transferencias", {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`
-      }
-    });
-
-    const data = await res.json();
-    setTransferencias(data);
-  };
-
-  obtener();
-}, []);
-
-const t = transferencias[0];
-
-if (!t) return;
   
   
 
@@ -654,7 +634,7 @@ useEffect(() => {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    {t.nombre}
+                    Nery de Lucio
                   </span>
                 </p>
               </div>
