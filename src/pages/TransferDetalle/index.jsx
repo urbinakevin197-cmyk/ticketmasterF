@@ -18,7 +18,7 @@ export default function TransferDetalle() {
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://biographies-citizen-safely-polls.trycloudflare.com/api/mis-transferencias", {
+    const res = await fetch("https://wheel-nature-intersection-requiring.trycloudflare.com/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://biographies-citizen-safely-polls.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://wheel-nature-intersection-requiring.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -65,7 +65,7 @@ const fechaCompleta = fecha.toLocaleDateString("es-MX", {
   year: "numeric"
 });
 
-const mes = fecha.toLocaleString("es-MX", { month: "short" });
+const mes = fecha.toLocaleString("es-MX", { weekday: "short" });
 const dia = fecha.getDate();
 
 const diaSemana = fecha.toLocaleDateString("es-MX", {
