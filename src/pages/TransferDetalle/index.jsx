@@ -65,11 +65,11 @@ const fechaCompleta = fecha.toLocaleDateString("es-MX", {
   year: "numeric"
 });
 
-const mes = fecha.toLocaleString("es-MX", { weekday: "short" });
+const mes = fecha.toLocaleString("es-MX", { month: "short" });
 const dia = fecha.getDate();
 
 const diaSemana = fecha.toLocaleDateString("es-MX", {
-  weekday: "long"
+  weekday: "short"
 });
 
 const hora = fecha.toLocaleTimeString("es-MX", {
@@ -686,7 +686,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
 
                           <span aria-hidden="true">
                             <div className="sc-afdb3e79-0 dJmYZU">
-                              <span className="sc-afdb3e79-1 bYEIOg">{mes}</span>
+                              <span className="sc-afdb3e79-1 bYEIOg"> {diaSemana}</span>
                               <span className="sc-afdb3e79-2 bOnyCz">{dia}</span>
                               <span className="sc-afdb3e79-3 hbHXrE" />
                             </div>
