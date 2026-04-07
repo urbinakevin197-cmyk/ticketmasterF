@@ -45,6 +45,8 @@ useEffect(() => {
 }, []);
 
 const t = transferencias[0];
+
+if (!t) return;
   
   
 
