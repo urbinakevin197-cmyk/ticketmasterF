@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://wheel-nature-intersection-requiring.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://plant-textbooks-dispatch-meat.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }

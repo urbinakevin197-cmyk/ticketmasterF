@@ -18,7 +18,7 @@ export default function TransferDetalle() {
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://wheel-nature-intersection-requiring.trycloudflare.com/api/mis-transferencias", {
+    const res = await fetch("https://plant-textbooks-dispatch-meat.trycloudflare.com/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://wheel-nature-intersection-requiring.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://plant-textbooks-dispatch-meat.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`

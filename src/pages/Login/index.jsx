@@ -25,7 +25,7 @@ export default function Login() {
 
     try {
 
-      const res = await fetch("https://wheel-nature-intersection-requiring.trycloudflare.com/api/login", {
+      const res = await fetch("https://plant-textbooks-dispatch-meat.trycloudflare.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
