@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://plant-textbooks-dispatch-meat.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://plenty-introducing-malpractice-firefox.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
