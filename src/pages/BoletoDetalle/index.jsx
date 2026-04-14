@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://camp-proposal-manually-radar.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://loud-rider-bargain-code.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }

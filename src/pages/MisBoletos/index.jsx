@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://camp-proposal-manually-radar.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://loud-rider-bargain-code.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
