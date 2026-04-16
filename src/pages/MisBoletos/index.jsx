@@ -640,7 +640,7 @@ useEffect(() => {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Sarahi Navarrete
+                    Daniela Torres
                   </span>
                 </p>
               </div>
