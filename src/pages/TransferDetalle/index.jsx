@@ -18,7 +18,7 @@ export default function TransferDetalle() {
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://peripheral-likely-thank-households.trycloudflare.com/api/mis-transferencias", {
+    const res = await fetch("https://major-reflections-copyrighted-favourite.trycloudflare.com/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://peripheral-likely-thank-households.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://major-reflections-copyrighted-favourite.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
