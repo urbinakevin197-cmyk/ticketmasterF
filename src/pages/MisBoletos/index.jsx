@@ -640,7 +640,7 @@ useEffect(() => {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Lú Solar 
+                    Brenda Paz  
                   </span>
                 </p>
               </div>
