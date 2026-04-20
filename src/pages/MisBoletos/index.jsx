@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://recipes-classifieds-instant-drunk.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://airplane-industry-thousand-balance.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
