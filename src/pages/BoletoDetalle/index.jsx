@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://expo-gasoline-craps-mainstream.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://recipes-classifieds-instant-drunk.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -828,7 +828,7 @@ export default function BoletoDetalle() {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Miranda Abigail
+                    Hana Martínez
                   </span>
                 </p>
               </div>
