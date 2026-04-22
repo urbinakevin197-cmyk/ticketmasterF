@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://airplane-industry-thousand-balance.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://requiring-carroll-leu-technical.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -828,7 +828,7 @@ export default function BoletoDetalle() {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Hana Martínez
+                    Elizabeth Quecholac
                   </span>
                 </p>
               </div>

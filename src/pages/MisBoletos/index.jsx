@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://airplane-industry-thousand-balance.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://requiring-carroll-leu-technical.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -640,7 +640,7 @@ useEffect(() => {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Hana Martínez
+                    Elizabeth Quecholac
                   </span>
                 </p>
               </div>
