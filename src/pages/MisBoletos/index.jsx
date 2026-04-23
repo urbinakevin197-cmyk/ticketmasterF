@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://pack-productions-icq-adjustments.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://butler-light-quizzes-speaking.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }

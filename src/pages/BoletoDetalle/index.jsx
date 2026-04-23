@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://pack-productions-icq-adjustments.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://butler-light-quizzes-speaking.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
