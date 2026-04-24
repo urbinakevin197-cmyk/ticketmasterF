@@ -18,7 +18,7 @@ export default function TransferDetalle() {
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://butler-light-quizzes-speaking.trycloudflare.com/api/mis-transferencias", {
+    const res = await fetch("https://climbing-mention-purposes-newly.trycloudflare.com/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://butler-light-quizzes-speaking.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://climbing-mention-purposes-newly.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -750,7 +750,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Brandon Díaz
+                    Vania Giselle
                   </span>
                 </p>
               </div>
