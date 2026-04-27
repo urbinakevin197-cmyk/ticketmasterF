@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://climbing-mention-purposes-newly.trycloudflare.com/api/boletos/${id}`, {
+  fetch(`https://mothers-uncle-restrict-olympic.trycloudflare.com/api/boletos/${id}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
