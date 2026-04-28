@@ -39,7 +39,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://mothers-uncle-restrict-olympic.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://futures-soundtrack-hung-majority.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
