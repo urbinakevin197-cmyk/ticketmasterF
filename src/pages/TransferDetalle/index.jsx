@@ -18,7 +18,7 @@ export default function TransferDetalle() {
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://mothers-uncle-restrict-olympic.trycloudflare.com/api/mis-transferencias", {
+    const res = await fetch("https://futures-soundtrack-hung-majority.trycloudflare.com/api/mis-transferencias", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -750,7 +750,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Miriam Mendoza
+                    Giuliana
                   </span>
                 </p>
               </div>
