@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://ratios-mid-empire-sydney.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://mailto-antenna-aka-founded.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }

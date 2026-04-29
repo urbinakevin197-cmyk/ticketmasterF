@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://ratios-mid-empire-sydney.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://mailto-antenna-aka-founded.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
