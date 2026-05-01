@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://qty-olympus-committees-colors.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://protect-hammer-contains-installation.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
