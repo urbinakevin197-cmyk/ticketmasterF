@@ -14,26 +14,40 @@ export default function TransferDetalle() {
    const { id } = useParams();
   const [transfer, setTransfer] = useState(null);
 
-   const [transferencias, setTransferencias] = useState([]);
+   const [transferencias, setTransferencias] = useState(null);
 
 useEffect(() => {
   const obtener = async () => {
-    const res = await fetch("https://protect-hammer-contains-installation.trycloudflare.com/api/mis-transferencias", {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`
-      }
-    });
+    try {
+      const res = await fetch("https://protect-hammer-contains-installation.trycloudflare.com/api/mis-transferencias", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`
+        }
+      });
 
-    const data = await res.json();
-    setTransferencias(data);
+      const data = await res.json();
+
+      if (!Array.isArray(data) || data.length === 0) {
+        navigate("/mis-boletos", { replace: true });
+        return;
+      }
+
+      setTransferencias(data);
+
+    } catch (err) {
+      console.error(err);
+      navigate("/mis-boletos", { replace: true });
+    }
   };
 
   obtener();
-}, []);
+}, [navigate]);
+
+if (transferencias === null) {
+  return <div>Cargando...</div>;
+}
 
 const t = transferencias[0];
-  
-if (!t) return;
 
 const aceptarBoleto = async () => {
   setLoading(true);
