@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch(" https://surrounding-fighter-chips-airfare.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://qty-olympus-committees-colors.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -640,7 +640,7 @@ useEffect(() => {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Hiromi Santiago
+                    Valentina Moreno
                   </span>
                 </p>
               </div>
