@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://protect-hammer-contains-installation.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://celtic-apnic-proceedings-worker.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -828,7 +828,7 @@ export default function BoletoDetalle() {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Fernanda Trujillo
+                    Jessica Nallely
                   </span>
                 </p>
               </div>
