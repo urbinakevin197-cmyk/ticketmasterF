@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://celtic-apnic-proceedings-worker.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://induction-left-mixture-reception.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
