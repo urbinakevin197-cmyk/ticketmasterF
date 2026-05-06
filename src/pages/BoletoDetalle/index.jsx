@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://induction-left-mixture-reception.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://bluetooth-rent-exception-controlling.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
