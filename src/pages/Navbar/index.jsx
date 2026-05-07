@@ -19,7 +19,7 @@ export default function Navbar() {
     if (e.key === "Escape") {
       setOpenMenu(false);
     }
-  };
+  }
 
   window.addEventListener("keydown", handleEsc);
   return () => window.removeEventListener("keydown", handleEsc);
@@ -49,7 +49,7 @@ useEffect(() => {
         {/* BIENVENIDA */}
         <div className="welcome">
           <span>¡Bienvenido de vuelta!</span>
-          <strong>Elia León</strong>
+          <strong>Jonathan Martin</strong>
         </div>
 
         {/* MIS BOLETOS */}
