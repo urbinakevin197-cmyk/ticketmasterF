@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://bluetooth-rent-exception-controlling.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://corporation-accurately-prayers-assumption.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
