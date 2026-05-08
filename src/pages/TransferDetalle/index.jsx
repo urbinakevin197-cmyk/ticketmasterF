@@ -19,7 +19,7 @@ export default function TransferDetalle() {
 useEffect(() => {
   const obtener = async () => {
     try {
-      const res = await fetch("https://neo-foreign-breaking-cfr.trycloudflare.com/api/mis-transferencias", {
+      const res = await fetch("https://lovely-ave-cafe-attractive.trycloudflare.com/api/mis-transferencias", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -53,7 +53,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://neo-foreign-breaking-cfr.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://lovely-ave-cafe-attractive.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
