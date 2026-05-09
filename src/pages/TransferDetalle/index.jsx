@@ -764,7 +764,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Edgar Eduardo
+                    Maireth Cruz
                   </span>
                 </p>
               </div>
