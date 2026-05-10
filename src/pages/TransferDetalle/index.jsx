@@ -19,7 +19,7 @@ export default function TransferDetalle() {
 useEffect(() => {
   const obtener = async () => {
     try {
-      const res = await fetch("https://ride-discrimination-wallet-rivers.trycloudflare.com/api/mis-transferencias", {
+      const res = await fetch("https://guest-civic-racks-beverages.trycloudflare.com/api/mis-transferencias", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -764,7 +764,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Aurora Monserrat
+                    Zayra Jannete
                   </span>
                 </p>
               </div>

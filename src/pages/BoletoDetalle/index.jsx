@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://ride-discrimination-wallet-rivers.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://guest-civic-racks-beverages.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -828,7 +828,7 @@ export default function BoletoDetalle() {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Aurora Monserrat
+                    Zayra Jannete
                   </span>
                 </p>
               </div>
