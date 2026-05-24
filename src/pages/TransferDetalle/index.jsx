@@ -19,7 +19,7 @@ export default function TransferDetalle() {
 useEffect(() => {
   const obtener = async () => {
     try {
-      const res = await fetch("https://guest-civic-racks-beverages.trycloudflare.com/api/mis-transferencias", {
+      const res = await fetch("https://nicole-remember-society-marketing.trycloudflare.com/api/mis-transferencias", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -53,7 +53,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://guest-civic-racks-beverages.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://nicole-remember-society-marketing.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
