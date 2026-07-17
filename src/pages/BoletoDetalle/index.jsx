@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://nicole-remember-society-marketing.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://compensation-notification-doing-cancellation.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }

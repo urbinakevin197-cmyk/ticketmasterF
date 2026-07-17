@@ -25,7 +25,7 @@ export default function Login() {
 
     try {
 
-      const res = await fetch("https://nicole-remember-society-marketing.trycloudflare.com/api/login", {
+      const res = await fetch("https://compensation-notification-doing-cancellation.trycloudflare.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
