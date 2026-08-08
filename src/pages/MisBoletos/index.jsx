@@ -31,7 +31,7 @@ export default function MisBoletos() {
   
 
   const obtenerBoletos = async () => {
-  const res = await fetch("https://compensation-notification-doing-cancellation.trycloudflare.com/api/mis-boletos", {
+  const res = await fetch("https://untitled-run-individual-routing.trycloudflare.com/api/mis-boletos", {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
