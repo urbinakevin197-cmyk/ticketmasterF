@@ -49,7 +49,7 @@ useEffect(() => {
         {/* BIENVENIDA */}
         <div className="welcome">
           <span>¡Bienvenido de vuelta!</span>
-          <strong>Saul Ramirez</strong>
+          <strong>Dafne Naomi González</strong>
         </div>
 
         {/* MIS BOLETOS */}
