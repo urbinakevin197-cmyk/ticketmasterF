@@ -19,7 +19,7 @@ export default function TransferDetalle() {
 useEffect(() => {
   const obtener = async () => {
     try {
-      const res = await fetch("https://eva-crowd-weed-alumni.trycloudflare.com/api/mis-transferencias", {
+      const res = await fetch("https://falling-perfectly-louise-equity.trycloudflare.com/api/mis-transferencias", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -53,7 +53,7 @@ const aceptarBoleto = async () => {
   setLoading(true);
 
   try {
-    await fetch(`https://eva-crowd-weed-alumni.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
+    await fetch(`https://falling-perfectly-louise-equity.trycloudflare.com/api/aceptar-boleto/${t.id}`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -764,7 +764,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Yoselin Daniela Nava Gómez
+                    Erika Priscila Luna Gortarez
                   </span>
                 </p>
               </div>

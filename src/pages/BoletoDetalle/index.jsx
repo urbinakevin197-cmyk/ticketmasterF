@@ -15,7 +15,7 @@ export default function BoletoDetalle() {
   const [boleto, setBoleto] = useState(null);
 
     useEffect(() => {
-  fetch(`https://eva-crowd-weed-alumni.trycloudflare.com/api/boletos/${id}`, { //hola we
+  fetch(`https://falling-perfectly-louise-equity.trycloudflare.com/api/boletos/${id}`, { //hola we
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
     }
@@ -828,7 +828,7 @@ export default function BoletoDetalle() {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Yoselin Daniela Nava Gómez
+                    Erika Priscila Luna Gortarez
                   </span>
                 </p>
               </div>
