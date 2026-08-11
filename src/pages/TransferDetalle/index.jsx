@@ -764,7 +764,7 @@ const hora = fecha.toLocaleTimeString("es-MX", {
                     ¡Bienvenido de vuelta!
                   </span>
                   <span className="sc-8486e8e9-3 iTJOrD" data-cs-mask="true">
-                    Erika Priscila Luna Gortarez
+                    Francisca Inés López González
                   </span>
                 </p>
               </div>
