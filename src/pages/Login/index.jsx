@@ -25,7 +25,7 @@ export default function Login() {
 
     try {
 
-      const res = await fetch("https://falling-perfectly-louise-equity.trycloudflare.com/api/login", {
+      const res = await fetch("https://von-examined-louisville-tvs.trycloudflare.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
